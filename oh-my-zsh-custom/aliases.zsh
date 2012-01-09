@@ -31,3 +31,5 @@ alias gdw='git diff --word-diff'
 alias glg='git lg'
 alias gau='git ls-files --other --exclude-standard -z | xargs -0 git add -Nv'
 alias gaur="git ls-files --exclude-standard --modified -z | xargs -0 git ls-files --stage -z | gawk 'BEGIN { RS=\"\0\"; FS=\"\t\"; ORS=\"\0\" } { if (\$1 ~ / e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 /) { sub(/^[^\t]+\t/, \"\", \$0); print } }' | xargs -0t -n 1 git reset -q -- 2>&1 | sed -e \"s/^git reset -q -- /reset '/\" -e \"s/ *$/'/\""
+alias glgd='git --no-pager lg origin/develop..HEAD --'
+alias gup='git-up'
