@@ -5,6 +5,22 @@ alias b='bundle install && /usr/local/Cellar/ctags/5.8/bin/ctags -f tmp/bundle.t
 alias rsa='cat ~/.ssh/id_rsa.pub'
 alias wiki='mvim -c VimwikiIndex'
 
+# Rails
+alias prc='pry -r ./config/environment'
+alias rake='bundle exec rake'
+
+# without Spork
+alias bec='bundle exec cucumber'
+alias ber='bundle exec rspec'
+alias becd='CUCUMBER_FORMAT=pretty bundle exec cucumber'
+alias berd='bundle exec rspec --format=doc'
+
+# with Spork
+alias becs='bundle exec cucumber --drb'
+alias bers='bundle exec rspec --drb'
+alias becds='CUCUMBER_FORMAT=pretty bundle exec cucumber --drb'
+alias berds='bundle exec rspec --drb --format=doc'
+
 # Git
 alias gs='git status'
 alias gl='git lg --all'
