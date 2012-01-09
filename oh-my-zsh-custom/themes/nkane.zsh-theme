@@ -8,7 +8,7 @@
 
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     PROMPT='%n%{$fg[magenta]%}@%{$reset_color%}%m : %{$fg[green]%}%~%{$reset_color%}$(git_prompt_info)
-%{$fg[cyan]%}➜ '
+%{$fg[cyan]%}➜%{$reset_color%} '
 
     ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[yellow]%}"
     ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
